@@ -1,36 +1,49 @@
-🚗 Ride Sharing App - System Design (Java)
-📌 Overview
+# 🚗 Ride Sharing App - System Design (Java)
 
-This project demonstrates a basic object-oriented system design for a Ride Sharing application (similar to Uber/Ola).
-The focus is on designing scalable and maintainable components using OOP principles like abstraction, inheritance, and interfaces.
+## 📌 Overview
+This project demonstrates a basic **Object-Oriented System Design** for a Ride Sharing application (similar to Uber/Ola).  
+The system is designed using core OOP principles to ensure scalability, maintainability, and flexibility.
 
-🔄 Flow of the System
-Passenger requests a ride
-App finds an available Driver
-Driver accepts the request
-Ride is assigned with a Vehicle
-Fare is calculated using FareType logic
-Ride completes
+---
 
-🎯 Key Concepts Used
-Abstraction → Vehicle interface
-Inheritance → FareType base class
-Polymorphism → Different vehicle types (Car, Bike, etc.)
-Encapsulation → Driver, Passenger data handling
+## 🛠️ Tech Used
+- Java
+- Object-Oriented Programming (OOP)
+- Basic System Design Principles
 
-🚀 Future Improvements
-Add ride matching algorithm
-Implement real-time location tracking
-Add payment integration
-Introduce surge pricing
-Add ratings & reviews system
+---
 
-🛠️ Tech Stack
-Java
-OOP Design Principles
+## 🧱 System Components
 
-📂 Project Structure (Example)
-RideSharingApp/
+### App
+- Entry point of the application
+- Manages communication between all components
+
+### Passenger
+- Represents a user requesting a ride
+- Can request and view ride details
+
+### Driver
+- Represents a driver in the system
+- Can accept/reject ride requests
+- Associated with a vehicle
+
+### Vehicle (Interface)
+- Defines common behavior for all vehicle types
+
+---
+### 🔄 System Flow
+1. Passenger requests a ride
+2. App searches for available drivers
+3. Driver accepts or rejects the request
+4. Vehicle is assigned to the ride
+5. Fare is calculated based on distance
+6. Ride is completed
+
+---
+### 📂 Design Structure
+```java
+   RideSharingApp/
 │── App.java
 │── Passenger.java
 │── Driver.java
@@ -39,5 +52,6 @@ RideSharingApp/
 │── Car.java
 │── Bike.java
 
-👨‍💻 Author
+```
+### 👨‍💻 Author
 Harsh
